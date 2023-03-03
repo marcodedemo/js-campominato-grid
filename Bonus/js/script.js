@@ -58,14 +58,20 @@ buttonGeneratorElement.addEventListener("click", function(){
 
             // attribuisco una dimensione diversa alle singole celle in base alla quantità di celle da creare
             if(rowsAndColumns == 100){
+
+                // width e height della singola cella in caso le celle dovessero essere 100
                 newCell.style.width = "63px";
                 newCell.style.height = "63px";
 
             }else if(rowsAndColumns == 81){
+
+                // width e height della singola cella in caso le celle dovessero essere 81
                 newCell.style.width = "70px";
                 newCell.style.height = "70px";
 
             }else if(rowsAndColumns == 49){
+
+                // width e height della singola cella in caso le celle dovessero essere 49
                 newCell.style.width = "90px";
                 newCell.style.height = "90px";
             }
@@ -80,11 +86,12 @@ buttonGeneratorElement.addEventListener("click", function(){
             newCell.addEventListener("click", function(){
 
                 // al click della cella aggiungo la classe active
-                newCell.classList.toggle("active");
+                newCell.classList.add("active");
                 
                 // scrivo in console il numero della cella cliccata
-                console.log("Hai cliccato la cella " + newCell.innerText)
-            })
+                console.log("Hai cliccato la cella " + newCell.innerText);
+                
+            },{once : true})
 
             // attribuisco la genitorialità al container dell'elemento creato
             gridContainerElement.append(newCell);
