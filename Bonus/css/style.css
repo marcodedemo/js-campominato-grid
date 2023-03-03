@@ -73,3 +73,27 @@ body{
 .active{
     background-color: aqua;
 }
+
+/* reset grid  */
+#reset-grid{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+}
+
+#reset-grid button{
+    display: none;
+
+    background-color: rgb(187, 19, 19);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px;
+
+    margin-top: 20px;
+}
+
+#reset-grid button.show{
+    display: block;
+}
