@@ -24,12 +24,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 
     padding-bottom: 30px;
 }
 
 #grid-generator #input-generator button{
+    background-color: rgb(19, 39, 187);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
 
+#grid-generator #input-generator select{
     background-color: rgb(19, 39, 187);
     color: white;
     border: none;
