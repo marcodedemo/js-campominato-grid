@@ -74,7 +74,7 @@ buttonGeneratorElement.addEventListener("click", function(){
             newCell.classList.toggle("active");
             
             // scrivo in console il numero della cella cliccata
-            console.log(newCell.innerText)
+            console.log("Hai cliccato la cella " + newCell.innerText)
         })
 
         // attribuisco la genitorialità al container dell'elemento creato
