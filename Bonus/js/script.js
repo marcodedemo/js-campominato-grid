@@ -86,12 +86,12 @@ buttonGeneratorElement.addEventListener("click", function(){
             newCell.addEventListener("click", function(){
 
                 // al click della cella aggiungo la classe active
-                newCell.classList.add("active");
+                newCell.classList.toggle("active");
                 
                 // scrivo in console il numero della cella cliccata
                 console.log("Hai cliccato la cella " + newCell.innerText);
                 
-            },{once : true})
+            })
 
             // attribuisco la genitorialità al container dell'elemento creato
             gridContainerElement.append(newCell);
